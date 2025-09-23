@@ -879,6 +879,10 @@ h1, h2, h3, h4, h5, h6 {
   width: 1rem;
 }
 
+.w-30{
+  width: 8rem;
+}
+
 .w-48{
   width: 12rem;
 }
