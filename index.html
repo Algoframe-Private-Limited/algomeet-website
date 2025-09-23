@@ -22,12 +22,12 @@
                     <rect width="32" height="32" rx="8" fill="currentColor"/>
                     <path d="M8 12h16v2H8v-2zm0 4h16v2H8v-2zm0 4h12v2H8v-2z" fill="white"/>
                 </svg>
-                <img style="width: 75%;" src="https://algoframe.in/wp-content/uploads/2023/04/website-logo.png" />
+                <img class="w-30" src="/images/algoMeetLogo.jpeg" />
                 <span class="ml-2 text-xl font-bold text-gray-900 hidden">Algoframe</span>
             </div>
             
             <!-- Desktop Navigation -->
-            <div class="hidden md:flex items-center space-x-8">
+            <div class="flex-1 flex justify-center space-x-8 hidden md:flex">
                 <a href="#features" class="text-gray-600 hover:text-primary transition-colors" data-en="Features" data-zh="功能">Features</a>
                 <a href="#contact" class="text-gray-600 hover:text-primary transition-colors" data-en="Contact" data-zh="联系我们">Contact</a>
                 <a href="#security" class="text-gray-600 hover:text-primary transition-colors" data-en="Security" data-zh="安全">Security</a>
@@ -37,22 +37,24 @@
               </div>
             
             <!-- Mobile Menu Button -->
-            <button class="md:hidden p-2" id="mobile-menu-btn">
-                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                </svg>
-            </button>
-            <button id="lang-toggle" class="text-gray-600 hover:text-primary transition-colors flex gap-1">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                    d="M12 3C7.029 3 3 7.029 3 12s4.029 9 9 9 9-4.029 9-9-4.029-9-9-9z
-                       M12 3c2.5 2.5 2.5 16.5 0 18 
-                       M3 12h18 
-                       M6 6c3 2 9 2 12 0 
-                       M6 18c3-2 9-2 12 0"/>
-                </svg>
-                <span id="current-lang" class="text-sm font-medium">EN</span>
-            </button>
+            <div class="flex items-center space-x-4">
+                <button class="md:hidden p-2" id="mobile-menu-btn">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+                <button id="lang-toggle" class="text-gray-600 hover:text-primary transition-colors flex gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                        d="M12 3C7.029 3 3 7.029 3 12s4.029 9 9 9 9-4.029 9-9-4.029-9-9-9z
+                           M12 3c2.5 2.5 2.5 16.5 0 18 
+                           M3 12h18 
+                           M6 6c3 2 9 2 12 0 
+                           M6 18c3-2 9-2 12 0"/>
+                    </svg>
+                    <span id="current-lang" class="text-sm font-medium">EN</span>
+                </button>
+            </div>
         </div>
     </div>
 </nav>
@@ -71,19 +73,19 @@
             </svg>
         </div>
     
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16">
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 flex justify-center items-center min-h-screen">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <!-- Left Column - Content -->
                 <div class="space-y-8">
                     <div class="space-y-6">
                         <h1 id="hero-title" class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                            <span id="hero-title-part1" data-en="One Platform for" data-zh="一站式平台，实现">
+                            <span id="hero-title-part1" class="block" data-en="One Platform for" data-zh="一站式平台 实现">
                                 One Platform for
                             </span>
-                            <span class="text-gradient" id="hero-title-highlight" data-en="Seamless Collaboration" data-zh="无缝协作">
+                            <span class="text-gradient" class="block" id="hero-title-highlight" data-en="Seamless Collaboration" data-zh="无缝协作">
                                 Seamless Collaboration
                             </span>
-                            <span id="hero-title-part2" data-en="and Workforce Management" data-zh="与人力管理">
+                            <span id="hero-title-part2" class="block" data-en="and Workforce Management" data-zh="与人力管理">
                                 and Workforce Management
                             </span>
                         </h1>
@@ -759,9 +761,9 @@
                         data-zh="通过个性化演示体验 Algoframe，根据贵组织需求量身定制。">
                         See Algoframe in action with a personalized demo tailored to your organization's needs.
                     </p>
-                    <button class="btn-primary w-full" data-en="Book Demo" data-zh="预约演示">
-                        <a href="#contactSection">Book Demo</a>
-                    </button>
+                    <a href="#contactSection" class="btn-primary w-full block" data-en="Book Demo" data-zh="预约演示">
+                        <span>Book Demo</span>
+                    </a>
                     <p class="text-sm text-gray-500 mt-2" data-en="30-minute session • No commitment required" data-zh="30分钟会话 • 无需承诺">
                         30-minute session • No commitment required
                     </p>
@@ -781,9 +783,9 @@
                     <p class="text-gray-600 mb-6" data-en="Discuss pricing, implementation, and how Algoframe fits your specific requirements." data-zh="讨论价格、实施方案以及 Algoframe 如何满足您的具体需求。">
                         Discuss pricing, implementation, and how Algoframe fits your specific requirements.
                     </p>
-                    <button class="btn-primary w-full" data-en="Contact Sales" data-zh="联系销售">
-                        <a href="#contactSection">Contact Sales</a>
-                    </button>
+                    <a href="#contactSection" class="btn-primary w-full block" data-en="Contact Sales" data-zh="联系销售">
+                        <span href="#contactSection">Contact Sales</span>
+                    </a>
                     <p class="text-sm text-gray-500 mt-2" data-en="Get custom quote • Enterprise solutions available" data-zh="获取定制报价 • 提供企业解决方案">
                         Get custom quote • Enterprise solutions available
                     </p>
@@ -800,9 +802,9 @@
                     <p class="text-gray-600 mb-6" data-en="Connect with our technical team to discuss integrations, security, and implementation." data-zh="与我们的技术团队联系，讨论系统集成、安全性及实施方案。">
                         Connect with our technical team to discuss integrations, security, and implementation.
                     </p>
-                    <button class="btn-secondary w-full" data-en="Get Technical Help" data-zh="获取技术帮助">
-                        <a href="#contactSection">Get Technical Help</a>
-                    </button>
+                    <a href="#contactSection" class="btn-secondary w-full block" data-en="Get Technical Help" data-zh="获取技术帮助">
+                        <span>Get Technical Help</span>
+                    </a>
                     <p class="text-sm text-gray-500 mt-2" data-en="Free consultation • Implementation guidance" data-zh="免费咨询 • 实施指导">
                         Free consultation • Implementation guidance
                     </p>
