@@ -73,12 +73,12 @@
             </svg>
         </div>
     
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 flex justify-center items-center min-h-screen">
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 flex justify-center items-center min-h-screen">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <!-- Left Column - Content -->
                 <div class="space-y-8">
                     <div class="space-y-6">
-                        <h1 id="hero-title" class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                        <h1 id="hero-title" class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight [lang=zh]:leading-snug">
                             <span id="hero-title-part1" class="block" data-en="One Platform for" data-zh="一站式平台 实现">
                                 One Platform for
                             </span>
@@ -145,7 +145,6 @@
                             </div>
                             <div class="flex space-x-2">
                                 <button class="px-3 py-1 text-xs bg-primary text-white rounded-full" id="video-tab" data-en="Video" data-zh="视频">Video</button>
-                                <button class="px-3 py-1 text-xs bg-gray-200 text-gray-600 rounded-full" id="hrms-tab" data-en="HRMS" data-zh="人力管理系统">HRMS</button>
                             </div>
                         </div>
     
@@ -163,9 +162,11 @@
                                 <!-- Buttons icons remain unchanged -->
                             </div>
                         </div>
-    
+                        <div class="flex space-x-2 justify-end">
+                            <button class="px-3 py-1 text-xs bg-primary text-white rounded-full mb-3" id="hrms-tab" data-en="HRMS" data-zh="人力管理系统">HRMS</button>
+                        </div>
                         <!-- HRMS View -->
-                        <div id="hrms-view" class="hidden space-y-4">
+                        <div id="hrms-view" class="space-y-4">
                             <div class="grid grid-cols-3 gap-4 text-center">
                                 <div class="bg-success-50 p-3 rounded-lg">
                                     <div class="text-2xl font-bold text-success-600">247</div>
@@ -1484,6 +1485,7 @@
 <script>
   const langToggle = document.getElementById('lang-toggle');
   const currentLang = document.getElementById('current-lang');
+  const heroTitle = document.getElementById('hero-title');
   let isChinese = false;
 
   langToggle.addEventListener('click', () => {
@@ -1496,6 +1498,11 @@
 
     // Update current language display
     currentLang.textContent = isChinese ? 'ZH' : 'EN';
+    if (isChinese) {
+      heroTitle.classList.add('leading-snug');
+    } else {
+      heroTitle.classList.remove('leading-snug');
+    }
   });
 </script>
   

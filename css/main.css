@@ -1002,6 +1002,10 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
 }
 
+.justify-end{
+  justify-content: end;
+}
+
 .justify-between{
   justify-content: space-between;
 }
@@ -1493,6 +1497,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .leading-relaxed{
   line-height: 1.625;
+}
+
+.leading-snug{
+  line-height: 1.4!important;
 }
 
 .leading-tight{
