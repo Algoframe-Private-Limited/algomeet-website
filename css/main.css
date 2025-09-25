@@ -164,6 +164,7 @@ html,
   /* 6 */
   -webkit-tap-highlight-color: transparent;
   /* 7 */
+  scroll-behavior: smooth;
 }
 
 /*
@@ -786,7 +787,9 @@ h1, h2, h3, h4, h5, h6 {
 .mt-4{
   margin-top: 1rem;
 }
-
+.mt-6{
+  margin-top: 1.2rem;
+}
 .block{
   display: block;
 }
