@@ -1,0 +1,1604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algomeet - One Platform for Seamless Collaboration and Workforce Management</title>
+    <meta name="description" content="Transform your organization with unified video conferencing and HRMS platform. Eliminate 5+ tools, reduce costs by 40%. Start free trial today." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="icon" type="image/png" href="https://algoframe.in/wp-content/uploads/fbrfg/favicon-96x96.png" sizes="96x96" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<!-- <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2FAlgoframe7610back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script> -->
+</head>
+<body class="font-inter bg-white">
+<!-- Navigation Header -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <svg class="h-8 w-8 text-primary hidden" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="32" height="32" rx="8" fill="currentColor"/>
+                    <path d="M8 12h16v2H8v-2zm0 4h16v2H8v-2zm0 4h12v2H8v-2z" fill="white"/>
+                </svg>
+                <img class="w-30" src="/images/algoMeetLogo.jpeg" />
+                <span class="ml-2 text-xl font-bold text-gray-900 hidden">Algoframe</span>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="flex-1 flex justify-center space-x-8 hidden md:flex">
+                <a href="#features" class="text-gray-600 hover:text-primary transition-colors" data-en="Features" data-zh="功能">Features</a>
+                <a href="#ai-features" class="text-gray-600 hover:text-primary transition-colors" data-en="AI Features" data-zh="AI功能">AI Features</a>
+                <a href="#contact" class="text-gray-600 hover:text-primary transition-colors" data-en="Contact" data-zh="联系我们">Contact</a>
+                <a href="#security" class="text-gray-600 hover:text-primary transition-colors" data-en="Security" data-zh="安全">Security</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-primary transition-colors" data-en="Testimonials" data-zh="客户评价">Testimonials</a>
+                <button class="text-gray-600 hover:text-primary transition-colors hidden" data-en="Sign In" data-zh="登录">Sign In</button>
+                <button class="btn-primary hidden" data-en="Start Free Trial" data-zh="免费试用">Start Free Trial</button>
+              </div>
+            
+            <!-- Mobile Menu Button -->
+            <div class="flex items-center space-x-4">
+                <button class="md:hidden p-2" id="mobile-menu-btn">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+                <button id="lang-toggle" class="text-gray-600 hover:text-primary transition-colors flex gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                        d="M12 3C7.029 3 3 7.029 3 12s4.029 9 9 9 9-4.029 9-9-4.029-9-9-9z
+                           M12 3c2.5 2.5 2.5 16.5 0 18 
+                           M3 12h18 
+                           M6 6c3 2 9 2 12 0 
+                           M6 18c3-2 9-2 12 0"/>
+                    </svg>
+                    <span id="current-lang" class="text-sm font-medium">EN</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen bg-gradient-corporate pt-16 overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10 hidden">
+            <svg class="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                    </pattern>
+                </defs>
+                <rect width="100" height="100" fill="url(#grid)"/>
+            </svg>
+        </div>
+    
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 flex justify-center items-center min-h-screen">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Column - Content -->
+                <div class="space-y-8">
+                    <div class="space-y-6">
+                        <h1 id="hero-title" class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                            <span id="hero-title-part1" class="block" data-en="One Platform for" data-zh="一站式平台 实现">
+                                One Platform for
+                            </span>
+                            <span class="text-gradient" class="block" id="hero-title-highlight" data-en="Seamless Collaboration" data-zh="无缝协作">
+                                Seamless Collaboration
+                            </span>
+                            <span id="hero-title-part2" class="block" data-en="and Workforce Management" data-zh="与人力管理">
+                                and Workforce Management
+                            </span>
+                        </h1>
+    
+                        <p id="hero-desc" class="text-xl text-gray-600 leading-relaxed" 
+                           data-en="Eliminate 5+ separate tools while reducing operational costs by 40%. Transform how your organization connects, collaborates, and manages workforce through enterprise-grade unified platform." 
+                           data-zh="整合超过5种独立工具，同时降低40%的运营成本。通过企业级统一平台，彻底改变组织的连接、协作和人力管理方式。">
+                            Eliminate 5+ separate tools while reducing operational costs by 40%. Transform how your organization connects, collaborates, and manages workforce through enterprise-grade unified platform.
+                        </p>
+                    </div>
+    
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button id="cta-trial" class="btn-primary text-lg px-8 py-4 flex items-center justify-center group" 
+                                data-en="Start Free 30-Day Trial" 
+                                data-zh="开始免费30天试用">
+                            Start Free 30-Day Trial
+                            <svg class="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                            </svg>
+                        </button>
+    
+                        <button id="cta-demo" class="border-2 border-primary text-primary font-semibold px-8 py-4 rounded-lg hover:bg-primary hover:text-white transition-all duration-200 flex items-center justify-center" 
+                                data-en="Schedule Live Demo" 
+                                data-zh="安排实时演示">
+                            <svg class="mr-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                            </svg>
+                            Schedule Live Demo
+                        </button>
+                    </div>
+    
+                    <!-- Trust Indicators -->
+                    <div class="pt-8 border-t border-gray-200">
+                        <div class="flex flex-wrap items-center gap-6">
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                                <span class="text-sm font-medium text-gray-900" id="user-counter">10,247</span>
+                                <span id="orgs" class="text-sm text-gray-600" data-en="organizations worldwide" data-zh="全球组织">organizations worldwide</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=126&h=40&auto=format&fit=crop" alt="ISO 27001" class="h-8" />
+                                <img src="https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=126&h=40" alt="SOC 2" class="h-8" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Right Column - Platform Preview -->
+                <div class="relative">
+                    <div class="bg-white rounded-2xl shadow-elevated p-6 transform hover:scale-105 transition-transform duration-300">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex space-x-2">
+                                <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                                <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                                <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                            </div>
+                            <div class="flex space-x-2">
+                                <button class="px-3 py-1 text-xs bg-primary text-white rounded-full" id="video-tab" data-en="Video" data-zh="视频">Video</button>
+                                <button class="px-3 py-1 text-xs bg-gray-200 text-gray-600 rounded-full" id="hrms-tab" data-en="HRMS" data-zh="人力管理系统">HRMS</button>
+                            </div>
+                        </div>
+    
+                        <!-- Video Conference View -->
+                        <div id="video-view" class="space-y-4">
+                            <div class="grid grid-cols-2 gap-2">
+                                <div class="bg-gray-900 rounded-lg aspect-video flex items-center justify-center">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&h=100" alt="User 1" class="w-16 h-16 rounded-full" />
+                                </div>
+                                <div class="bg-gray-900 rounded-lg aspect-video flex items-center justify-center">
+                                    <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150&h=100" alt="User 2" class="w-16 h-16 rounded-full" />
+                                </div>
+                            </div>
+                            <div class="flex justify-center space-x-4">
+                                <!-- Buttons icons remain unchanged -->
+                            </div>
+                        </div>
+    
+                        <!-- HRMS View -->
+                        <div id="hrms-view" class="hidden space-y-4">
+                            <div class="grid grid-cols-3 gap-4 text-center">
+                                <div class="bg-success-50 p-3 rounded-lg">
+                                    <div class="text-2xl font-bold text-success-600">247</div>
+                                    <div class="text-xs text-gray-600" id="activeEmployees" data-en="Active Employees" data-zh="在职员工">Active Employees</div>
+                                </div>
+                                <div class="bg-primary-50 p-3 rounded-lg">
+                                    <div class="text-2xl font-bold text-primary-600">98%</div>
+                                    <div class="text-xs text-gray-600" id="attendanceRate" data-en="Attendance Rate" data-zh="出勤率">Attendance Rate</div>
+                                </div>
+                                <div class="bg-warning-50 p-3 rounded-lg">
+                                    <div class="text-2xl font-bold text-warning-600">12</div>
+                                    <div class="text-xs text-gray-600" id="pendingReviews" data-en="Pending Reviews" data-zh="待审核事项">Pending Reviews</div>
+                                </div>
+                            </div>
+                            <div class="space-y-2">
+                                <div class="flex justify-between items-center p-2 bg-gray-50 rounded">
+                                    <span class="text-sm" id="payroll" data-en="Payroll Processing" data-zh="薪资处理">Payroll Processing</span>
+                                    <span class="text-xs text-green-600">Automated</span>
+                                </div>
+                                <div class="flex justify-between items-center p-2 bg-gray-50 rounded">
+                                    <span class="text-sm" id="leaveRequests" data-en="Leave Requests" data-zh="请假申请">Leave Requests</span>
+                                    <span class="text-xs text-blue-600">3 Pending</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Floating Elements -->
+                    <div class="absolute -top-4 -right-4 bg-white rounded-full p-3 shadow-lg animate-pulse-slow">
+                        <svg class="h-6 w-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Problem Agitation Section -->
+    <section class="py-20 bg-white hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                    Stop Juggling Multiple Tools That Don't Talk to Each Other
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Enterprise teams waste 2.5 hours daily switching between disconnected platforms. 
+                    See how much your organization could save with unified collaboration.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Before: Chaotic Dashboard -->
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-gray-900 flex items-center">
+                        <span class="w-8 h-8 bg-red-100 text-red-600 rounded-full flex items-center justify-center text-sm font-bold mr-3">✗</span>
+                        Current Reality: Tool Chaos
+                    </h3>
+                    <div class="bg-gray-50 p-6 rounded-xl">
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="bg-white p-3 rounded border-l-4 border-red-500">
+                                <div class="text-sm font-medium">Zoom</div>
+                                <div class="text-xs text-gray-500">$149/month</div>
+                            </div>
+                            <div class="bg-white p-3 rounded border-l-4 border-red-500">
+                                <div class="text-sm font-medium">BambooHR</div>
+                                <div class="text-xs text-gray-500">$299/month</div>
+                            </div>
+                            <div class="bg-white p-3 rounded border-l-4 border-red-500">
+                                <div class="text-sm font-medium">Slack</div>
+                                <div class="text-xs text-gray-500">$89/month</div>
+                            </div>
+                            <div class="bg-white p-3 rounded border-l-4 border-red-500">
+                                <div class="text-sm font-medium">ADP</div>
+                                <div class="text-xs text-gray-500">$199/month</div>
+                            </div>
+                            <div class="bg-white p-3 rounded border-l-4 border-red-500">
+                                <div class="text-sm font-medium">Calendly</div>
+                                <div class="text-xs text-gray-500">$79/month</div>
+                            </div>
+                            <div class="bg-white p-3 rounded border-l-4 border-red-500">
+                                <div class="text-sm font-medium">DocuSign</div>
+                                <div class="text-xs text-gray-500">$125/month</div>
+                            </div>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-gray-200">
+                            <div class="flex justify-between items-center">
+                                <span class="font-medium text-gray-900">Monthly Total:</span>
+                                <span class="text-2xl font-bold text-red-600">$940</span>
+                            </div>
+                            <div class="text-sm text-gray-500 mt-1">+ Integration costs, training, support</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- After: Unified Platform -->
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-gray-900 flex items-center">
+                        <span class="w-8 h-8 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-sm font-bold mr-3">✓</span>
+                        With Algoframe: Unified Solution
+                    </h3>
+                    <div class="bg-gradient-to-br from-primary-50 to-secondary-50 p-6 rounded-xl">
+                        <div class="bg-white p-6 rounded-lg border-l-4 border-primary">
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="text-lg font-bold text-gray-900">Algoframe Platform</div>
+                                <div class="text-sm bg-green-100 text-green-800 px-2 py-1 rounded-full">All-in-One</div>
+                            </div>
+                            <div class="grid grid-cols-2 gap-3 mb-4">
+                                <div class="flex items-center text-sm text-gray-600">
+                                    <svg class="h-4 w-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                    HD Video Calls
+                                </div>
+                                <div class="flex items-center text-sm text-gray-600">
+                                    <svg class="h-4 w-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                    HRMS & Payroll
+                                </div>
+                                <div class="flex items-center text-sm text-gray-600">
+                                    <svg class="h-4 w-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                    Team Collaboration
+                                </div>
+                                <div class="flex items-center text-sm text-gray-600">
+                                    <svg class="h-4 w-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                    Document Management
+                                </div>
+                            </div>
+                            <div class="pt-4 border-t border-gray-200">
+                                <div class="flex justify-between items-center">
+                                    <span class="font-medium text-gray-900">Monthly Total:</span>
+                                    <span class="text-2xl font-bold text-green-600">$549</span>
+                                </div>
+                                <div class="text-sm text-green-600 mt-1 font-medium">Save $391/month (42% reduction)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Benefits Section -->
+    <!-- Features Section -->
+<section id="features" class="py-20 bg-surface">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6" 
+                data-en="Enterprise-Grade Features That Drive Results" 
+                data-zh="企业级功能，驱动卓越成果">
+                Enterprise-Grade Features That Drive Results
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto" 
+               data-en="Experience the power of unified collaboration with interactive demos showcasing real-world performance." 
+               data-zh="体验统一协作的强大功能，通过互动演示展示真实世界的性能。">
+                Experience the power of unified collaboration with interactive demos showcasing real-world performance.
+            </p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Crystal Clear HD Video -->
+            <div class="card group hover:shadow-elevated transition-all duration-300 cursor-pointer" id="video-demo">
+                <div class="text-center mb-6">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary-200 transition-colors">
+                        <svg class="h-8 w-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3" 
+                        data-en="Crystal-Clear HD Video Calls" 
+                        data-zh="高清晰视频通话">
+                        Crystal-Clear HD Video Calls
+                    </h3>
+                    <p class="text-gray-600 mb-4" 
+                       data-en="Experience 4K video quality with AI-powered noise cancellation and automatic bandwidth optimization." 
+                       data-zh="体验4K视频质量，AI降噪，自动带宽优化。">
+                        Experience 4K video quality with AI-powered noise cancellation and automatic bandwidth optimization.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-sm font-medium" data-en="Connection Quality" data-zh="连接质量">Connection Quality</span>
+                        <div class="flex items-center space-x-1">
+                            <div class="w-2 h-4 bg-green-500 rounded-sm"></div>
+                            <div class="w-2 h-4 bg-green-500 rounded-sm"></div>
+                            <div class="w-2 h-4 bg-green-500 rounded-sm"></div>
+                            <div class="w-2 h-4 bg-green-500 rounded-sm"></div>
+                            <div class="w-2 h-4 bg-green-300 rounded-sm"></div>
+                        </div>
+                    </div>
+                    <div class="text-xs text-gray-500" data-en="4K @ 60fps • 0.2s latency • 99.9% uptime" data-zh="4K @ 60fps • 0.2秒延迟 • 99.9%正常运行">4K @ 60fps • 0.2s latency • 99.9% uptime</div>
+                </div>
+            </div>
+            
+            <!-- Automated Payroll -->
+            <div class="card group hover:shadow-elevated transition-all duration-300 cursor-pointer" id="payroll-demo">
+                <div class="text-center mb-6">
+                    <div class="w-16 h-16 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-success-200 transition-colors">
+                        <svg class="h-8 w-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3" data-en="Automated Payroll Management" data-zh="自动化薪资管理">
+                        Automated Payroll Management
+                    </h3>
+                    <p class="text-gray-600 mb-4" data-en="Streamline payroll processing with automated calculations, tax compliance, and direct deposit integration." data-zh="通过自动计算、税务合规和直接存款集成简化薪资处理。">
+                        Streamline payroll processing with automated calculations, tax compliance, and direct deposit integration.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <div class="space-y-2 text-sm">
+                        <div class="flex justify-between">
+                            <span data-en="Base Salary" data-zh="基本工资">Base Salary</span>
+                            <span class="font-medium">$5,000.00</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span data-en="Overtime (8hrs)" data-zh="加班 (8小时)">Overtime (8hrs)</span>
+                            <span class="font-medium">$375.00</span>
+                        </div>
+                        <div class="flex justify-between text-red-600">
+                            <span data-en="Tax Deductions" data-zh="税务扣除">Tax Deductions</span>
+                            <span class="font-medium">-$1,287.50</span>
+                        </div>
+                        <div class="border-t pt-2 flex justify-between font-bold">
+                            <span data-en="Net Pay" data-zh="净工资">Net Pay</span>
+                            <span class="text-green-600">$4,087.50</span>
+                        </div>
+                    </div>
+                    <div class="mt-3 text-xs text-green-600 font-medium" data-en="✓ Processed automatically on 15th" data-zh="✓ 于每月15日自动处理">
+                        ✓ Processed automatically on 15th
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Unlimited Meetings -->
+            <div class="card group hover:shadow-elevated transition-all duration-300 cursor-pointer" id="meetings-demo">
+                <div class="text-center mb-6">
+                    <div class="w-16 h-16 bg-warning-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-warning-200 transition-colors">
+                        <svg class="h-8 w-8 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3" data-en="24-Hour Unlimited Meetings" data-zh="24小时无限制会议">
+                        24-Hour Unlimited Meetings
+                    </h3>
+                    <p class="text-gray-600 mb-4" data-en="Host unlimited meetings with up to 1000 participants. No time limits, no restrictions." data-zh="举办最多1000人参与的无限制会议，无时间限制，无任何约束。">
+                        Host unlimited meetings with up to 1000 participants. No time limits, no restrictions.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <div class="mb-3">
+                        <div class="flex justify-between text-sm mb-1">
+                            <span data-en="This Month's Usage" data-zh="本月使用量">This Month's Usage</span>
+                            <span class="font-medium">847 hours</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-warning h-2 rounded-full" style="width: 65%"></div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 text-xs">
+                        <div>
+                            <div class="font-medium" data-en="Active Meetings" data-zh="进行中的会议">Active Meetings</div>
+                            <div class="text-gray-500">23 ongoing</div>
+                        </div>
+                        <div>
+                            <div class="font-medium" data-en="Peak Participants" data-zh="峰值参与者">Peak Participants</div>
+                            <div class="text-gray-500">1,247 users</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Video Conferencing AI Section -->
+<section id="ai-features" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+                data-en="AI-Powered Video Conferencing"
+                data-zh="AI驱动的视频会议">
+                AI-Powered Video Conferencing
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto"
+                data-en="Smart meetings with real-time AI assistance."
+                data-zh="实时AI助力的智能会议。">
+                Smart meetings with real-time AI assistance.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- AI Meeting Assistant -->
+            <div class="card group hover:shadow-elevated transition-all duration-300">
+                <div class="text-center mb-4">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary-200 transition-colors">
+                        <svg class="h-8 w-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3"
+                        data-en="AI Meeting Assistant"
+                        data-zh="AI会议助手">
+                        AI Meeting Assistant
+                    </h3>
+                    <p class="text-gray-600 text-sm mb-4"
+                        data-en="Capture and organize everything said in your meetings."
+                        data-zh="捕捉并整理会议中的全部内容。">
+                        Capture and organize everything said in your meetings.
+                    </p>
+                </div>
+                <ul class="space-y-2 text-sm text-gray-600 bg-gray-50 p-4 rounded-lg">
+                    <li class="flex items-start gap-2"><span class="text-primary mt-0.5">•</span> Real-time transcription and translation (multi-language)</li>
+                    <li class="flex items-start gap-2"><span class="text-primary mt-0.5">•</span> Meeting summaries and action items extraction</li>
+                    <li class="flex items-start gap-2"><span class="text-primary mt-0.5">•</span> Speaker identification and attribution</li>
+                    <li class="flex items-start gap-2"><span class="text-primary mt-0.5">•</span> Smart highlights of key decisions and topics</li>
+                </ul>
+            </div>
+
+            <!-- Enhanced Video Quality -->
+            <div class="card group hover:shadow-elevated transition-all duration-300">
+                <div class="text-center mb-4">
+                    <div class="w-16 h-16 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-success-200 transition-colors">
+                        <svg class="h-8 w-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3"
+                        data-en="Enhanced Video Quality"
+                        data-zh="增强视频画质">
+                        Enhanced Video Quality
+                    </h3>
+                    <p class="text-gray-600 text-sm mb-4"
+                        data-en="Look your best on every call with AI video enhancements."
+                        data-zh="借助AI视频增强，在每次通话中展现最佳状态。">
+                        Look your best on every call with AI video enhancements.
+                    </p>
+                </div>
+                <ul class="space-y-2 text-sm text-gray-600 bg-gray-50 p-4 rounded-lg">
+                    <li class="flex items-start gap-2"><span class="text-success mt-0.5">•</span> AI-powered background blur/replacement</li>
+                    <li class="flex items-start gap-2"><span class="text-success mt-0.5">•</span> Automatic lighting adjustment</li>
+                    <li class="flex items-start gap-2"><span class="text-success mt-0.5">•</span> Gesture recognition for hand raising</li>
+                    <li class="flex items-start gap-2"><span class="text-success mt-0.5">•</span> Virtual backgrounds with green screen detection</li>
+                </ul>
+            </div>
+
+            <!-- Meeting Intelligence -->
+            <div class="card group hover:shadow-elevated transition-all duration-300">
+                <div class="text-center mb-4">
+                    <div class="w-16 h-16 bg-warning-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-warning-200 transition-colors">
+                        <svg class="h-8 w-8 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3"
+                        data-en="Meeting Intelligence"
+                        data-zh="会议智能">
+                        Meeting Intelligence
+                    </h3>
+                    <p class="text-gray-600 text-sm mb-4"
+                        data-en="Understand engagement and well-being in real time."
+                        data-zh="实时了解参与度与参会者状态。">
+                        Understand engagement and well-being in real time.
+                    </p>
+                </div>
+                <ul class="space-y-2 text-sm text-gray-600 bg-gray-50 p-4 rounded-lg">
+                    <li class="flex items-start gap-2"><span class="text-warning mt-0.5">•</span> Sentiment analysis during meetings</li>
+                    <li class="flex items-start gap-2"><span class="text-warning mt-0.5">•</span> Engagement tracking (who's paying attention)</li>
+                    <li class="flex items-start gap-2"><span class="text-warning mt-0.5">•</span> Smart scheduling suggestions based on calendar patterns</li>
+                    <li class="flex items-start gap-2"><span class="text-warning mt-0.5">•</span> Meeting fatigue detection and break recommendations</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Interactive Feature Demonstration -->
+<section class="py-20 bg-white" id="Experiences">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6" 
+                data-en="Experience the Platform in Action" 
+                data-zh="体验平台实际操作">
+                Experience the Platform in Action
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto" 
+                data-en="Interactive demos showcasing real-world collaboration scenarios your team faces daily." 
+                data-zh="互动演示展示您的团队每天面对的真实协作场景。">
+                Interactive demos showcasing real-world collaboration scenarios your team faces daily.
+            </p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12">
+            <!-- Screen Sharing Simulator -->
+            <div class="space-y-6">
+                <h3 class="text-2xl font-bold text-gray-900" 
+                    data-en="Screen Sharing & Collaboration" 
+                    data-zh="屏幕共享与协作">
+                    Screen Sharing & Collaboration
+                </h3>
+                <div class="bg-gray-900 rounded-xl p-6 relative overflow-hidden">
+                    <div class="bg-white rounded-lg p-4 mb-4">
+                        <div class="flex items-center justify-between mb-3">
+                            <div class="text-sm font-medium" data-en="Q4 Sales Dashboard" data-zh="第四季度销售仪表板">Q4 Sales Dashboard</div>
+                            <div class="flex space-x-2">
+                                <button class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                                    <svg class="h-3 w-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/>
+                                    </svg>
+                                </button>
+                                <button class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center">
+                                    <svg class="h-3 w-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-3">
+                            <div class="bg-primary-50 p-3 rounded text-center">
+                                <div class="text-lg font-bold text-primary" data-en="$2.4M" data-zh="2.4百万美元">$2.4M</div>
+                                <div class="text-xs text-gray-600" data-en="Revenue" data-zh="收入">Revenue</div>
+                            </div>
+                            <div class="bg-success-50 p-3 rounded text-center">
+                                <div class="text-lg font-bold text-success" data-en="127%" data-zh="127%">127%</div>
+                                <div class="text-xs text-gray-600" data-en="Target" data-zh="目标">Target</div>
+                            </div>
+                            <div class="bg-warning-50 p-3 rounded text-center">
+                                <div class="text-lg font-bold text-warning" data-en="89" data-zh="89">89</div>
+                                <div class="text-xs text-gray-600" data-en="Deals" data-zh="交易">Deals</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Participant Cursors -->
+                    <div class="absolute top-20 left-32 w-4 h-4 bg-red-500 rounded-full animate-pulse"></div>
+                    <div class="absolute top-32 right-24 w-4 h-4 bg-blue-500 rounded-full animate-pulse"></div>
+
+                    <!-- Chat Overlay -->
+                    <div class="absolute bottom-4 right-4 bg-white rounded-lg p-3 w-48 text-xs">
+                        <div class="space-y-1">
+                            <div><span class="font-medium text-blue-600" data-en="Sarah:" data-zh="Sarah：">Sarah:</span> <span data-en="Great numbers!" data-zh="数据真棒！">Great numbers!</span></div>
+                            <div><span class="font-medium text-green-600" data-en="Mike:" data-zh="Mike：">Mike:</span> <span data-en="Can we drill down?" data-zh="我们能深入分析吗？">Can we drill down?</span></div>
+                            <div class="flex items-center text-gray-500">
+                                <div class="w-2 h-2 bg-gray-400 rounded-full animate-pulse mr-2"></div>
+                                <span data-en="John is typing..." data-zh="John正在输入...">John is typing...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Employee Self-Service Portal -->
+            <div class="space-y-6">
+                <h3 class="text-2xl font-bold text-gray-900" data-en="Employee Self-Service Portal" data-zh="员工自助门户">
+                    Employee Self-Service Portal
+                </h3>
+                <div class="bg-white border border-gray-200 rounded-xl overflow-hidden">
+                    <!-- Portal Header -->
+                    <div class="bg-primary text-white p-4">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h4 class="font-semibold text-white" data-en="Welcome back, Sarah Johnson" data-zh="欢迎回来，Sarah Johnson">Welcome back, Sarah Johnson</h4>
+                                <p class="text-primary-100 text-sm" data-en="Marketing Manager" data-zh="市场经理">Marketing Manager</p>
+                            </div>
+                            <img src="https://ix-marketing.imgix.net/focalpoint.png?auto=format,compress&w=1946" alt="Profile" class="w-12 h-12 rounded-full"/>
+                        </div>
+                    </div>
+
+                    <!-- Portal Navigation -->
+                    <div class="p-4">
+                        <div class="grid grid-cols-2 gap-4 mb-4">
+                            <button class="p-3 bg-primary-50 text-primary rounded-lg text-left hover:bg-primary-100 transition-colors">
+                                <div class="font-medium text-sm" data-en="Time Off Request" data-zh="请假申请">Time Off Request</div>
+                                <div class="text-xs opacity-75" data-en="Submit new request" data-zh="提交新申请">Submit new request</div>
+                            </button>
+                            <button class="p-3 bg-gray-50 text-gray-700 rounded-lg text-left hover:bg-gray-100 transition-colors">
+                                <div class="font-medium text-sm" data-en="Pay Stubs" data-zh="工资单">Pay Stubs</div>
+                                <div class="text-xs opacity-75" data-en="View & download" data-zh="查看并下载">View & download</div>
+                            </button>
+                            <button class="p-3 bg-gray-50 text-gray-700 rounded-lg text-left hover:bg-gray-100 transition-colors">
+                                <div class="font-medium text-sm" data-en="Benefits" data-zh="福利">Benefits</div>
+                                <div class="text-xs opacity-75" data-en="Manage enrollment" data-zh="管理注册">Manage enrollment</div>
+                            </button>
+                            <button class="p-3 bg-gray-50 text-gray-700 rounded-lg text-left hover:bg-gray-100 transition-colors">
+                                <div class="font-medium text-sm" data-en="Performance" data-zh="绩效">Performance</div>
+                                <div class="text-xs opacity-75" data-en="Review goals" data-zh="查看目标">Review goals</div>
+                            </button>
+                        </div>
+
+                        <!-- Quick Stats -->
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h5 class="font-medium text-gray-900 mb-3" data-en="Quick Overview" data-zh="快速概览">Quick Overview</h5>
+                            <div class="space-y-2 text-sm">
+                                <div class="flex justify-between">
+                                    <span data-en="PTO Balance" data-zh="带薪休假余额">PTO Balance</span>
+                                    <span class="font-medium">18.5 days</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span data-en="Next Review" data-zh="下次评审">Next Review</span>
+                                    <span class="font-medium">March 15, 2025</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span data-en="Team Meetings" data-zh="团队会议">Team Meetings</span>
+                                    <span class="font-medium">3 this week</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+    <!-- Social Proof & Testimonials -->
+<section id="testimonials" class="py-20 bg-surface">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6" 
+                data-en="Trusted by Enterprise Leaders Worldwide" 
+                data-zh="全球企业领导者的信赖选择">
+                Trusted by Enterprise Leaders Worldwide
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto" 
+                data-en="See how organizations like yours achieved measurable results with our unified platform." 
+                data-zh="看看像您这样的组织如何通过我们的统一平台取得可衡量的成果。">
+                See how organizations like yours achieved measurable results with our unified platform.
+            </p>
+        </div>
+
+        <!-- Enterprise Client Logos -->
+        <div class="mb-16">
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center opacity-60">
+                <!-- Logos: images remain unchanged, only alt text can have translations -->
+                <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?q=80&w=150&h=60&auto=format&fit=crop" 
+                        alt="Enterprise Client" 
+                        data-en="Enterprise Client" data-zh="企业客户"
+                        class="h-12 object-contain mx-auto filter grayscale hover:grayscale-0 transition-all" />
+                <img src="https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=150&h=60" 
+                        alt="Enterprise Client" 
+                        data-en="Enterprise Client" data-zh="企业客户"
+                        class="h-12 object-contain mx-auto filter grayscale hover:grayscale-0 transition-all" />
+                <img src="https://ix-marketing.imgix.net/autotagging.png?auto=format,compress&w=1946" 
+                        alt="Enterprise Client" 
+                        data-en="Enterprise Client" data-zh="企业客户"
+                        class="h-12 object-contain mx-auto filter grayscale hover:grayscale-0 transition-all" />
+                <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?q=80&w=150&h=60&auto=format&fit=crop" 
+                        alt="Enterprise Client" 
+                        data-en="Enterprise Client" data-zh="企业客户"
+                        class="h-12 object-contain mx-auto filter grayscale hover:grayscale-0 transition-all" />
+                <img src="https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=150&h=60" 
+                        alt="Enterprise Client" 
+                        data-en="Enterprise Client" data-zh="企业客户"
+                        class="h-12 object-contain mx-auto filter grayscale hover:grayscale-0 transition-all" />
+                <img src="https://ix-marketing.imgix.net/focalpoint.png?auto=format&fit=crop" 
+                        alt="Enterprise Client" 
+                        data-en="Enterprise Client" data-zh="企业客户"
+                        class="h-12 object-contain mx-auto filter grayscale hover:grayscale-0 transition-all" />
+            </div>
+        </div>
+
+        <!-- Testimonials Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Testimonial 1 -->
+            <div class="card">
+                <div class="flex items-center mb-4">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=60&h=60&auto=format&fit=crop" 
+                            alt="David Chen" class="w-12 h-12 rounded-full mr-4" />
+                    <div>
+                        <div class="font-semibold text-gray-900" data-en="David Chen" data-zh="David Chen">David Chen</div>
+                        <div class="text-sm text-gray-600" data-en="IT Director, TechCorp" data-zh="IT总监, TechCorp">IT Director, TechCorp</div>
+                    </div>
+                </div>
+                <p class="text-gray-600 mb-4" 
+                    data-en="Algoframe eliminated our need for 6 different tools. Implementation took just 2 weeks, and we're saving $15,000 monthly while improving team productivity by 35%." 
+                    data-zh="Algoframe消除了我们对六种不同工具的需求。实施仅用了两周，我们每月节省15,000美元，同时提高团队生产力35%。">
+                    "Algoframe eliminated our need for 6 different tools. Implementation took just 2 weeks, and we're saving $15,000 monthly while improving team productivity by 35%."
+                </p>
+                <div class="flex items-center">
+                    <div class="flex text-yellow-400 mr-2">★★★★★</div>
+                    <span class="text-sm text-gray-500" data-en="ROI: 340% in 6 months" data-zh="投资回报率：6个月340%">ROI: 340% in 6 months</span>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="card">
+                <div class="flex items-center mb-4">
+                    <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=60&h=60" 
+                            alt="Sarah Martinez" class="w-12 h-12 rounded-full mr-4" />
+                    <div>
+                        <div class="font-semibold text-gray-900" data-en="Sarah Martinez" data-zh="Sarah Martinez">Sarah Martinez</div>
+                        <div class="text-sm text-gray-600" data-en="HR Director, GlobalTech" data-zh="人力资源总监, GlobalTech">HR Director, GlobalTech</div>
+                    </div>
+                </div>
+                <p class="text-gray-600 mb-4" 
+                    data-en="The unified HRMS and video platform transformed our remote workforce management. Payroll processing time reduced from 3 days to 3 hours. Game-changer!" 
+                    data-zh="统一的HRMS和视频平台彻底改变了我们的远程员工管理。薪资处理时间从3天减少到3小时。改变游戏规则！">
+                    "The unified HRMS and video platform transformed our remote workforce management. Payroll processing time reduced from 3 days to 3 hours. Game-changer!"
+                </p>
+                <div class="flex items-center">
+                    <div class="flex text-yellow-400 mr-2">★★★★★</div>
+                    <span class="text-sm text-gray-500" data-en="Time saved: 40 hours/month" data-zh="节省时间：每月40小时">Time saved: 40 hours/month</span>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="card">
+                <div class="flex items-center mb-4">
+                    <img src="https://ix-marketing.imgix.net/benefits_unleashed-creativity.png?auto=format,compress&w=1946" 
+                            alt="Michael Johnson" class="w-12 h-12 rounded-full mr-4" />
+                    <div>
+                        <div class="font-semibold text-gray-900" data-en="Michael Johnson" data-zh="Michael Johnson">Michael Johnson</div>
+                        <div class="text-sm text-gray-600" data-en="CEO, InnovateCorp" data-zh="首席执行官, InnovateCorp">CEO, InnovateCorp</div>
+                    </div>
+                </div>
+                <p class="text-gray-600 mb-4" 
+                    data-en="Security was our biggest concern. Algoframe's enterprise-grade compliance and seamless integration with our existing systems exceeded expectations." 
+                    data-zh="安全是我们最大的关注点。Algoframe的企业级合规性和与现有系统的无缝集成超出了预期。">
+                    "Security was our biggest concern. Algoframe's enterprise-grade compliance and seamless integration with our existing systems exceeded expectations."
+                </p>
+                <div class="flex items-center">
+                    <div class="flex text-yellow-400 mr-2">★★★★★</div>
+                    <span class="text-sm text-gray-500" data-en="Security rating: A+" data-zh="安全评级：A+">Security rating: A+</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Success Metrics -->
+        <div class="mt-16 grid md:grid-cols-4 gap-8 text-center">
+            <div>
+                <div class="text-4xl font-bold text-primary mb-2" data-en="40%" data-zh="40%">40%</div>
+                <div class="text-gray-600" data-en="Reduction in admin time" data-zh="管理时间减少">Reduction in admin time</div>
+            </div>
+            <div>
+                <div class="text-4xl font-bold text-success mb-2" data-en="$391" data-zh="391美元">$391</div>
+                <div class="text-gray-600" data-en="Average monthly savings" data-zh="平均每月节省">Average monthly savings</div>
+            </div>
+            <div>
+                <div class="text-4xl font-bold text-warning mb-2" data-en="2 weeks" data-zh="2周">2 weeks</div>
+                <div class="text-gray-600" data-en="Average implementation" data-zh="平均实施时间">Average implementation</div>
+            </div>
+            <div>
+                <div class="text-4xl font-bold text-secondary mb-2" data-en="99.9%" data-zh="99.9%">99.9%</div>
+                <div class="text-gray-600" data-en="Platform uptime" data-zh="平台运行时间">Platform uptime</div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+    <!-- Contact Us Section -->
+<section id="contact" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6" 
+                data-en="Ready to Transform Your Organization?" 
+                data-zh="准备好改变您的组织了吗？">
+                Ready to Transform Your Organization?
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8" 
+                data-en="Connect with our team to discover how Algoframe can revolutionize your collaboration and workforce management. Let's build something amazing together." 
+                data-zh="与我们的团队联系，了解 Algoframe 如何革新您的协作和员工管理。让我们一起创造非凡成果。">
+                Connect with our team to discover how Algoframe can revolutionize your collaboration and workforce management. Let's build something amazing together.
+            </p>
+
+            <!-- Contact Options -->
+            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <!-- Schedule Demo -->
+                <div class="card text-center group hover:shadow-elevated transition-all duration-300">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary-200 transition-colors">
+                        <svg class="h-8 w-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3" 
+                        data-en="Schedule a Live Demo" 
+                        data-zh="安排实时演示">
+                        Schedule a Live Demo
+                    </h3>
+                    <p class="text-gray-600 mb-6" 
+                        data-en="See Algoframe in action with a personalized demo tailored to your organization's needs." 
+                        data-zh="通过个性化演示体验 Algoframe，根据贵组织需求量身定制。">
+                        See Algoframe in action with a personalized demo tailored to your organization's needs.
+                    </p>
+                    <a href="#contactSection" class="btn-primary w-full block" data-en="Book Demo" data-zh="预约演示">
+                        <span>Book Demo</span>
+                    </a>
+                    <p class="text-sm text-gray-500 mt-2" data-en="30-minute session • No commitment required" data-zh="30分钟会话 • 无需承诺">
+                        30-minute session • No commitment required
+                    </p>
+                </div>
+
+                <!-- Talk to Sales -->
+                <div class="card text-center group hover:shadow-elevated transition-all duration-300 border-2 border-primary">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-primary text-white px-4 py-1 rounded-full text-sm font-medium" data-en="Most Popular" data-zh="最受欢迎">Most Popular</span>
+                    </div>
+                    <div class="w-16 h-16 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-success-200 transition-colors">
+                        <svg class="h-8 w-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3" data-en="Talk to Sales" data-zh="联系销售">Talk to Sales</h3>
+                    <p class="text-gray-600 mb-6" data-en="Discuss pricing, implementation, and how Algoframe fits your specific requirements." data-zh="讨论价格、实施方案以及 Algoframe 如何满足您的具体需求。">
+                        Discuss pricing, implementation, and how Algoframe fits your specific requirements.
+                    </p>
+                    <a href="#contactSection" class="btn-primary w-full block" data-en="Contact Sales" data-zh="联系销售">
+                        <span href="#contactSection">Contact Sales</span>
+                    </a>
+                    <p class="text-sm text-gray-500 mt-2" data-en="Get custom quote • Enterprise solutions available" data-zh="获取定制报价 • 提供企业解决方案">
+                        Get custom quote • Enterprise solutions available
+                    </p>
+                </div>
+
+                <!-- Technical Support -->
+                <div class="card text-center group hover:shadow-elevated transition-all duration-300">
+                    <div class="w-16 h-16 bg-warning-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-warning-200 transition-colors">
+                        <svg class="h-8 w-8 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M12 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3" data-en="Technical Consultation" data-zh="技术咨询">Technical Consultation</h3>
+                    <p class="text-gray-600 mb-6" data-en="Connect with our technical team to discuss integrations, security, and implementation." data-zh="与我们的技术团队联系，讨论系统集成、安全性及实施方案。">
+                        Connect with our technical team to discuss integrations, security, and implementation.
+                    </p>
+                    <a href="#contactSection" class="btn-secondary w-full block" data-en="Get Technical Help" data-zh="获取技术帮助">
+                        <span>Get Technical Help</span>
+                    </a>
+                    <p class="text-sm text-gray-500 mt-2" data-en="Free consultation • Implementation guidance" data-zh="免费咨询 • 实施指导">
+                        Free consultation • Implementation guidance
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="max-w-4xl mx-auto" id="contactSection">
+            <div class="bg-surface rounded-2xl p-8 md:p-12">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4" data-en="Get Started Today" data-zh="今天开始">Get Started Today</h3>
+                    <p class="text-gray-600" data-en="Tell us about your organization and we'll customize a solution for you." data-zh="告诉我们您的组织情况，我们将为您定制解决方案。">
+                        Tell us about your organization and we'll customize a solution for you.
+                    </p>
+                </div>
+
+                <form class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="firstName" class="block text-sm font-medium text-gray-700 mb-2" data-en="First Name *" data-zh="名字 *">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="" />
+                        </div>
+                        <div>
+                            <label for="lastName" class="block text-sm font-medium text-gray-700 mb-2" data-en="Last Name *" data-zh="姓氏 *">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="" />
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2" data-en="Work Email *" data-zh="工作邮箱 *">Work Email *</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="" />
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-2" data-en="Phone Number" data-zh="电话号码">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="" />
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="company" class="block text-sm font-medium text-gray-700 mb-2" data-en="Company Name *" data-zh="公司名称 *">Company Name *</label>
+                            <input type="text" id="company" name="company" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="" />
+                        </div>
+                        <div>
+                            <label for="employees" class="block text-sm font-medium text-gray-700 mb-2" data-en="Number of Employees" data-zh="员工人数">Number of Employees</label>
+                            <select id="employees" name="employees" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                                <option value="" data-en="Select range" data-zh="选择范围">Select range</option>
+                                <option value="1-50" data-en="1-50 employees" data-zh="1-50名员工">1-50 employees</option>
+                                <option value="51-200" data-en="51-200 employees" data-zh="51-200名员工">51-200 employees</option>
+                                <option value="201-500" data-en="201-500 employees" data-zh="201-500名员工">201-500 employees</option>
+                                <option value="501-1000" data-en="501-1,000 employees" data-zh="501-1000名员工">501-1,000 employees</option>
+                                <option value="1000+" data-en="1,000+ employees" data-zh="1000+名员工">1,000+ employees</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="interest" class="block text-sm font-medium text-gray-700 mb-2" data-en="What interests you most?" data-zh="您最感兴趣的是什么？">What interests you most?</label>
+                        <select id="interest" name="interest" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                            <option value="" data-en="Select your primary interest" data-zh="选择您的主要兴趣">Select your primary interest</option>
+                            <option value="video-conferencing" data-en="Video Conferencing Solution" data-zh="视频会议解决方案">Video Conferencing Solution</option>
+                            <option value="hrms-platform" data-en="HRMS & Payroll Management" data-zh="人力资源管理系统 & 薪资管理">HRMS & Payroll Management</option>
+                            <option value="unified-platform" data-en="Complete Unified Platform" data-zh="完整统一平台">Complete Unified Platform</option>
+                            <option value="integration" data-en="Integration with Existing Systems" data-zh="与现有系统集成">Integration with Existing Systems</option>
+                            <option value="migration" data-en="Migration from Current Tools" data-zh="从现有工具迁移">Migration from Current Tools</option>
+                            <option value="enterprise" data-en="Enterprise Custom Solution" data-zh="企业定制解决方案">Enterprise Custom Solution</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-2" data-en="Tell us about your needs" data-zh="告诉我们您的需求">Tell us about your needs</label>
+                        <textarea id="message" name="message" rows="4" placeholder="" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent resize-vertical"></textarea>
+                    </div>
+
+                    <div class="flex items-start">
+                        <input type="checkbox" id="consent" name="consent" required class="mt-1 h-4 w-4 text-primary focus:ring-primary border-gray-300 rounded" />
+                        <label for="consent" class="ml-2 text-sm text-gray-600" data-en="I agree to receive communications from Algoframe and understand I can unsubscribe at any time." data-zh="我同意接收 Algoframe 的通信，并理解我可以随时取消订阅。">
+                            I agree to receive communications from Algoframe and understand I can unsubscribe at any time. 
+                            <a href="#" class="text-primary hover:underline" data-en="Privacy Policy" data-zh="隐私政策">Privacy Policy</a>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn-primary text-lg px-12 py-4 flex justify-center items-center" data-en="Connect With Our Team" data-zh="与我们的团队联系">
+                        Connect With Our Team
+                        <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                        </svg>
+                    </button>
+                    <p class="text-sm text-gray-500 mt-3" data-en="We'll respond within 2 hours during business days" data-zh="我们将在工作日内的2小时内回复">
+                        We'll respond within 2 hours during business days
+                    </p>
+                </form>
+            </div>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="mt-16 grid md:grid-cols-3 gap-8 text-center">
+            <div class="space-y-3">
+                <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto">
+                    <svg class="h-6 w-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                </div>
+                <h4 class="font-semibold text-gray-900" data-en="Email Us" data-zh="发送邮件">Email Us</h4>
+                <p class="text-gray-600">info@algoframe.in</p>
+                <p class="text-sm text-gray-500 hidden" data-en="Response within 2 hours" data-zh="2小时内回复">Response within 2 hours</p>
+            </div>
+
+            <div class="space-y-3">
+                <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto">
+                    <svg class="h-6 w-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                    </svg>
+                </div>
+                <h4 class="font-semibold text-gray-900" data-en="Call Us" data-zh="致电我们">Call Us</h4>
+                <p class="text-gray-600">+91-8040545599</p>
+                <p class="text-sm text-gray-500" data-en="Mon-Fri, 9AM-6PM IST" data-zh="周一至周五，上午9点-下午6点">Mon-Fri, 9AM-6PM IST</p>
+            </div>
+
+            <div class="space-y-3">
+                <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto">
+                    <svg class="h-6 w-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                    </svg>
+                </div>
+                <h4 class="font-semibold text-gray-900" data-en="Live Chat" data-zh="在线聊天">Live Chat</h4>
+                <p class="text-gray-600" data-en="Available on our website" data-zh="可在我们的网站上使用">Available on our website</p>
+                <p class="text-sm text-gray-500 hidden" data-en="24/7 support available" data-zh="全天候支持">24/7 support available</p>
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+    <!-- Security & Trust Section -->
+<section id="security" class="py-20 bg-surface">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6" 
+                data-en="Enterprise-Grade Security You Can Trust" 
+                data-zh="值得信赖的企业级安全">
+                Enterprise-Grade Security You Can Trust
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto" 
+                data-en="Your data security is our top priority. We maintain the highest industry standards and compliance certifications." 
+                data-zh="您的数据安全是我们的首要任务。我们遵循最高行业标准并具备合规认证。">
+                Your data security is our top priority. We maintain the highest industry standards and compliance certifications.
+            </p>
+        </div>
+        
+        <!-- Security Certifications Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16 hidden">
+            <div class="text-center">
+                <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=60&h=60&auto=format&fit=crop" alt="ISO 27001" class="w-12 h-12" />
+                </div>
+                <h3 class="font-semibold text-gray-900 mb-2" data-en="ISO 27001" data-zh="ISO 27001">ISO 27001</h3>
+                <p class="text-sm text-gray-600" data-en="Information security management certified" data-zh="信息安全管理认证">Information security management certified</p>
+            </div>
+
+            <div class="text-center">
+                <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                    <img src="https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=60&h=60" alt="SOC 2" class="w-12 h-12" />
+                </div>
+                <h3 class="font-semibold text-gray-900 mb-2" data-en="SOC 2 Type II" data-zh="SOC 2 类型 II">SOC 2 Type II</h3>
+                <p class="text-sm text-gray-600" data-en="Audited security controls and processes" data-zh="审计安全控制和流程">Audited security controls and processes</p>
+            </div>
+
+            <div class="text-center">
+                <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                    <svg class="w-12 h-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                    </svg>
+                </div>
+                <h3 class="font-semibold text-gray-900 mb-2" data-en="GDPR Compliant" data-zh="符合GDPR">GDPR Compliant</h3>
+                <p class="text-sm text-gray-600" data-en="Full European data protection compliance" data-zh="完全符合欧洲数据保护要求">Full European data protection compliance</p>
+            </div>
+
+            <div class="text-center">
+                <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                    <svg class="w-12 h-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                    </svg>
+                </div>
+                <h3 class="font-semibold text-gray-900 mb-2" data-en="256-bit SSL" data-zh="256位SSL">256-bit SSL</h3>
+                <p class="text-sm text-gray-600" data-en="Bank-level encryption for all data" data-zh="银行级数据加密">Bank-level encryption for all data</p>
+            </div>
+        </div>
+        
+        <!-- Security Features -->
+        <div class="grid md:grid-cols-2 gap-12 text-center">
+            <div class="space-y-6">
+                <h3 class="text-2xl font-bold text-gray-900" data-en="Data Protection" data-zh="数据保护">Data Protection</h3>
+                <ul class="space-y-4">
+                    <li class="flex items-start justify-center">
+                        <svg class="h-6 w-6 text-green-500 mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div>
+                            <div class="font-medium text-gray-900" data-en="End-to-end encryption" data-zh="端到端加密">End-to-end encryption</div>
+                            <div class="text-sm text-gray-600" data-en="All communications encrypted in transit and at rest" data-zh="所有通信在传输和存储中均加密">All communications encrypted in transit and at rest</div>
+                        </div>
+                    </li>
+                    <li class="flex items-start justify-center">
+                        <svg class="h-6 w-6 text-green-500 mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div>
+                            <div class="font-medium text-gray-900" data-en="Zero-knowledge architecture" data-zh="零知识架构">Zero-knowledge architecture</div>
+                            <div class="text-sm text-gray-600" data-en="We cannot access your sensitive business data" data-zh="我们无法访问您的敏感业务数据">We cannot access your sensitive business data</div>
+                        </div>
+                    </li>
+                    <li class="flex items-start justify-center">
+                        <svg class="h-6 w-6 text-green-500 mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div>
+                            <div class="font-medium text-gray-900" data-en="Regular security audits" data-zh="定期安全审计">Regular security audits</div>
+                            <div class="text-sm text-gray-600" data-en="Third-party penetration testing quarterly" data-zh="每季度进行第三方渗透测试">Third-party penetration testing quarterly</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="space-y-6">
+                <h3 class="text-2xl font-bold text-gray-900" data-en="Access Control" data-zh="访问控制">Access Control</h3>
+                <ul class="space-y-4">
+                    <li class="flex items-start justify-center">
+                        <svg class="h-6 w-6 text-green-500 mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div>
+                            <div class="font-medium text-gray-900" data-en="Multi-factor authentication" data-zh="多因素认证">Multi-factor authentication</div>
+                            <div class="text-sm text-gray-600" data-en="Required for all administrative access" data-zh="所有管理员访问均需验证">Required for all administrative access</div>
+                        </div>
+                    </li>
+                    <li class="flex items-start justify-center">
+                        <svg class="h-6 w-6 text-green-500 mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div>
+                            <div class="font-medium text-gray-900" data-en="Role-based permissions" data-zh="基于角色的权限">Role-based permissions</div>
+                            <div class="text-sm text-gray-600" data-en="Granular control over user access levels" data-zh="对用户访问级别进行精细控制">Granular control over user access levels</div>
+                        </div>
+                    </li>
+                    <li class="flex items-start justify-center">
+                        <svg class="h-6 w-6 text-green-500 mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div>
+                            <div class="font-medium text-gray-900" data-en="Activity monitoring" data-zh="活动监控">Activity monitoring</div>
+                            <div class="text-sm text-gray-600" data-en="Complete audit trails for compliance" data-zh="完整审计记录以确保合规性">Complete audit trails for compliance</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+    <!-- FAQ Section -->
+<section class="py-20 bg-white" id="FAQ">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+                data-en="Frequently Asked Questions"
+                data-zh="常见问题解答">
+                Frequently Asked Questions
+            </h2>
+            <p class="text-xl text-gray-600"
+                data-en="Get answers to common questions about implementation, security, and integration."
+                data-zh="获取有关实施、安全性和集成的常见问题解答。">
+                Get answers to common questions about implementation, security, and integration.
+            </p>
+        </div>
+        
+        <div class="space-y-6">
+            <!-- FAQ Item 1 -->
+            <div class="border border-gray-200 rounded-lg">
+                <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors" onclick="toggleFAQ(1)">
+                    <span class="font-semibold text-gray-900"
+                            data-en="How quickly can we implement Algoframe?"
+                            data-zh="我们可以多快实施Algoframe？">
+                        How quickly can we implement Algoframe?
+                    </span>
+                    <svg class="h-5 w-5 text-gray-500 transform transition-transform" id="faq-icon-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="hidden px-6 pb-4" id="faq-content-1">
+                    <p class="text-gray-600"
+                        data-en="Most organizations are fully operational within 2 weeks. Our implementation team provides dedicated support, data migration assistance, and comprehensive training. Enterprise clients receive a dedicated success manager to ensure smooth transition."
+                        data-zh="大多数组织在2周内即可完全投入运营。我们的实施团队提供专属支持、数据迁移协助和全面培训。企业客户将获得专属成功经理以确保平稳过渡。">
+                        Most organizations are fully operational within 2 weeks. Our implementation team provides dedicated support, data migration assistance, and comprehensive training. Enterprise clients receive a dedicated success manager to ensure smooth transition.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- FAQ Item 2 -->
+            <div class="border border-gray-200 rounded-lg">
+                <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors" onclick="toggleFAQ(2)">
+                    <span class="font-semibold text-gray-900"
+                            data-en="What integrations are available?"
+                            data-zh="有哪些可用的集成？">
+                        What integrations are available?
+                    </span>
+                    <svg class="h-5 w-5 text-gray-500 transform transition-transform" id="faq-icon-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="hidden px-6 pb-4" id="faq-content-2">
+                    <p class="text-gray-600"
+                        data-en="Our REST API enables custom integrations, and our professional services team can assist with complex implementations."
+                        data-zh="我们的REST API支持自定义集成，并且我们的专业服务团队可以协助处理复杂的实施。">
+                        Our REST API enables custom integrations, and our professional services team can assist with complex implementations.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- FAQ Item 3 -->
+            <div class="border border-gray-200 rounded-lg hidden">
+                <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors" onclick="toggleFAQ(3)">
+                    <span class="font-semibold text-gray-900"
+                            data-en="How secure is our data?"
+                            data-zh="我们的数据有多安全？">
+                        How secure is our data?
+                    </span>
+                    <svg class="h-5 w-5 text-gray-500 transform transition-transform" id="faq-icon-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="hidden px-6 pb-4" id="faq-content-3">
+                    <p class="text-gray-600"
+                        data-en="Your data is protected with bank-level security including 256-bit SSL encryption, SOC 2 Type II compliance, and ISO 27001 certification. We maintain zero-knowledge architecture and conduct quarterly security audits. Data centers are geographically distributed with 99.9% uptime SLA."
+                        data-zh="您的数据受到银行级安全保护，包括256位SSL加密、SOC 2 Type II合规性和ISO 27001认证。我们采用零知识架构并每季度进行安全审计。数据中心地理分布，99.9%正常运行时间SLA。">
+                        Your data is protected with bank-level security including 256-bit SSL encryption, SOC 2 Type II compliance, and ISO 27001 certification. We maintain zero-knowledge architecture and conduct quarterly security audits. Data centers are geographically distributed with 99.9% uptime SLA.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- FAQ Item 4 -->
+            <div class="border border-gray-200 rounded-lg">
+                <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors" onclick="toggleFAQ(4)">
+                    <span class="font-semibold text-gray-900"
+                            data-en="Can we migrate from our current systems?"
+                            data-zh="我们可以从现有系统迁移吗？">
+                        Can we migrate from our current systems?
+                    </span>
+                    <svg class="h-5 w-5 text-gray-500 transform transition-transform" id="faq-icon-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="hidden px-6 pb-4" id="faq-content-4">
+                    <p class="text-gray-600"
+                        data-en="Yes, we provide comprehensive migration services for all major HRMS and communication platforms. Our team handles data extraction, transformation, and validation to ensure zero data loss. We also offer parallel running periods to minimize business disruption."
+                        data-zh="是的，我们为所有主要HRMS和通信平台提供全面的迁移服务。我们的团队处理数据提取、转换和验证，以确保零数据丢失。我们还提供并行运行期以最小化业务中断。">
+                        Yes, we provide comprehensive migration services for all major HRMS and communication platforms. Our team handles data extraction, transformation, and validation to ensure zero data loss. We also offer parallel running periods to minimize business disruption.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- FAQ Item 5 -->
+            <div class="border border-gray-200 rounded-lg">
+                <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors" onclick="toggleFAQ(5)">
+                    <span class="font-semibold text-gray-900"
+                            data-en="What support options are available?"
+                            data-zh="有哪些支持选项？">
+                        What support options are available?
+                    </span>
+                    <svg class="h-5 w-5 text-gray-500 transform transition-transform" id="faq-icon-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="hidden px-6 pb-4" id="faq-content-5">
+                    <p class="text-gray-600"
+                        data-en="All plans include email support with one day response time. Professional plans add priority support and phone access. Dedicated success managers, and quarterly business reviews to optimize platform usage."
+                        data-zh="所有计划均包含电子邮件支持，响应时间为一天。专业计划增加优先支持和电话访问。专属成功经理和季度业务评审以优化平台使用。">
+                        All plans include email support with one day response time. Professional plans add priority support and phone access. Dedicated success managers, and quarterly business reviews to optimize platform usage.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+    <!-- Final CTA Section -->
+<section class="py-20 bg-gradient-corporate" id="LimitedTime">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <!-- Urgency Element -->
+        <div class="inline-flex items-center bg-accent text-white px-4 py-2 rounded-full text-sm font-medium mb-8">
+            <svg class="h-4 w-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <span data-en="Limited Time: Free setup assistance for first 100 signups"
+                    data-zh="限时优惠：前100名注册用户可免费获得设置协助">
+                Limited Time: Free setup assistance for first 100 signups
+            </span>
+        </div>
+        
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+            data-en="Ready to Transform Your Organization?"
+            data-zh="准备好改变您的组织了吗？">
+            Ready to Transform Your Organization?
+        </h2>
+        <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto"
+            data-en="Join 10,000+ organizations saving 40% on operational costs while improving team productivity. Start your free trial today - no credit card required."
+            data-zh="加入超过10,000个组织，节省40%的运营成本，同时提高团队生产力。立即开始免费试用，无需信用卡。">
+            Join 10,000+ organizations saving 40% on operational costs while improving team productivity. Start your free trial today - no credit card required.
+        </p>
+        
+        <!-- Trial Access Form -->
+        <div class="max-w-md mx-auto mb-8">
+            <form class="space-y-4">
+                <input type="email" placeholder="Enter your work email"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" required
+                        data-en-placeholder="Enter your work email"
+                        data-zh-placeholder="请输入您的工作邮箱" />
+                <button type="submit" class="w-full btn-primary text-lg py-4"
+                        data-en="Start Free 30-Day Trial"
+                        data-zh="开始免费30天试用">
+                    Start Free 30-Day Trial
+                    <svg class="ml-2 h-5 w-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                    </svg>
+                </button>
+            </form>
+            <p class="text-sm text-gray-500 mt-3"
+                data-en="No credit card required • Full access • Cancel anytime"
+                data-zh="无需信用卡 • 完全访问 • 可随时取消">
+                No credit card required • Full access • Cancel anytime
+            </p>
+        </div>
+        
+        <!-- Success Credentials Display -->
+        <div class="bg-white/80 backdrop-blur-sm rounded-lg p-4 max-w-sm mx-auto hidden">
+            <div class="text-sm text-gray-600 mb-2"
+                    data-en="Trial Access Credentials:"
+                    data-zh="试用访问凭证：">
+                Trial Access Credentials:
+            </div>
+            <div class="font-mono text-sm space-y-1">
+                <div data-en="Email: demo@Algoframe.com" data-zh="邮箱：demo@Algoframe.com">Email: demo@Algoframe.com</div>
+                <div data-en="Password: trial123" data-zh="密码：trial123">Password: trial123</div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    
+    
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8 hidden">
+                <!-- Company Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <svg class="h-8 w-8 text-primary" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="32" height="32" rx="8" fill="currentColor"/>
+                            <path d="M8 12h16v2H8v-2zm0 4h16v2H8v-2zm0 4h12v2H8v-2z" fill="white"/>
+                        </svg>
+                        <span class="ml-2 text-xl font-bold">Algoframe</span>
+                    </div>
+                    <p class="text-gray-400">
+                        Transforming how organizations connect, collaborate, and manage their workforce through unified enterprise solutions.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-colors">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-white transition-colors">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Product Links -->
+                <div>
+                    <h4 class="font-semibold mb-4">Product</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#ai-features" class="hover:text-white transition-colors">AI Meeting Features</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors">Video Conferencing</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors">HRMS Platform</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors">Integrations</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors">Mobile Apps</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors">API Documentation</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Company Links -->
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors">Careers</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors">Press</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors">Partners</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Support Links -->
+                <div>
+                    <h4 class="font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors">Help Center</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors">Documentation</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors">System Status</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors">Security</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-center items-center">
+                <p class="text-gray-400 text-sm text-center"
+                data-en="© 2025 Algoframe. All Rights Reserved."
+                data-zh="© 2025 Algoframe。保留所有权利。">
+                    © 2025 Algoframe. All Rights Reserved.
+                </p>
+                <div class="flex items-center space-x-4 mt-4 md:mt-0 hidden">
+                    <span class="text-sm text-gray-400">Admin Portal:</span>
+                    <span class="font-mono text-xs text-gray-500">admin@company.com / admin2025</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Bottom CTA (Mobile) -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 md:hidden z-40" id="sticky-cta">
+        <button class="w-full btn-primary py-3">
+            Start Free Trial
+        </button>
+    </div>
+
+    <script>
+    // User counter animation
+    let userCount = 10000;
+    const counter = document.getElementById('user-counter');
+    const increment = () => {
+        userCount += Math.floor(Math.random() * 5) + 1;
+        counter.textContent = userCount.toLocaleString();
+    };
+    setInterval(increment, 3000);
+
+    // Platform preview tabs
+    document.getElementById('video-tab').addEventListener('click', function() {
+        document.getElementById('video-view').classList.remove('hidden');
+        document.getElementById('hrms-view').classList.add('hidden');
+        this.classList.add('bg-primary', 'text-white');
+        this.classList.remove('bg-gray-200', 'text-gray-600');
+        document.getElementById('hrms-tab').classList.remove('bg-primary', 'text-white');
+        document.getElementById('hrms-tab').classList.add('bg-gray-200', 'text-gray-600');
+    });
+
+    document.getElementById('hrms-tab').addEventListener('click', function() {
+        document.getElementById('hrms-view').classList.remove('hidden');
+        document.getElementById('video-view').classList.add('hidden');
+        this.classList.add('bg-primary', 'text-white');
+        this.classList.remove('bg-gray-200', 'text-gray-600');
+        document.getElementById('video-tab').classList.remove('bg-primary', 'text-white');
+        document.getElementById('video-tab').classList.add('bg-gray-200', 'text-gray-600');
+    });
+
+    // FAQ toggle functionality
+    function toggleFAQ(index) {
+        const content = document.getElementById(`faq-content-${index}`);
+        const icon = document.getElementById(`faq-icon-${index}`);
+        
+        if (content.classList.contains('hidden')) {
+            content.classList.remove('hidden');
+            icon.style.transform = 'rotate(180deg)';
+        } else {
+            content.classList.add('hidden');
+            icon.style.transform = 'rotate(0deg)';
+        }
+    }
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    // Mobile menu toggle
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+        // Mobile menu implementation would go here
+        console.log('Mobile menu clicked');
+    });
+
+    // Sticky CTA visibility based on scroll
+    let lastScrollTop = 0;
+    const stickyCTA = document.getElementById('sticky-cta');
+    
+    window.addEventListener('scroll', function() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        if (scrollTop > lastScrollTop && scrollTop > 100) {
+            // Scrolling down
+            stickyCTA.style.transform = 'translateY(0)';
+        } else {
+            // Scrolling up
+            stickyCTA.style.transform = 'translateY(100%)';
+        }
+        
+        lastScrollTop = scrollTop;
+    });
+
+    // Contact form submission handling
+    document.querySelector('#contact form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form data
+        const formData = new FormData(this);
+        const firstName = formData.get('firstName');
+        const lastName = formData.get('lastName');
+        const email = formData.get('email');
+        const company = formData.get('company');
+        
+        // Simulate form submission
+        alert(`Thank you, ${firstName}! We've received your request and will connect with you soon.\n\nOur team will reach out to ${email} within 2 business hours to discuss how Algomeet can help ${company} transform their collaboration experience.`);
+        
+        // Reset form
+        this.reset();
+    });
+
+    // Final CTA form submission handling  
+    const finalCTAForm = document.querySelector('section:last-of-type form');
+    if (finalCTAForm) {
+        finalCTAForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            
+            // Simulate form submission
+            // alert(`Thank you! Trial access has been sent to ${email}\n\nCredentials:\nEmail: demo@algomeet.com\nPassword: trial123`);
+            alert(`Thank you! Soon will share a details to ${email}`);
+        });
+    }
+
+    // Animation on scroll
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate-fade-in');
+            }
+        });
+    }, observerOptions);
+
+    // Observe all cards and sections
+    document.querySelectorAll('.card, section').forEach(el => {
+        observer.observe(el);
+    });
+</script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+<script>
+  const langToggle = document.getElementById('lang-toggle');
+  const currentLang = document.getElementById('current-lang');
+  let isChinese = false;
+
+  langToggle.addEventListener('click', () => {
+    isChinese = !isChinese;
+
+    // Update nav & content text
+    document.querySelectorAll('[data-en]').forEach(el => {
+      el.textContent = isChinese ? el.getAttribute('data-zh') : el.getAttribute('data-en');
+    });
+
+    // Update current language display
+    currentLang.textContent = isChinese ? 'ZH' : 'EN';
+  });
+</script>
+  
+</body>
+</html>
